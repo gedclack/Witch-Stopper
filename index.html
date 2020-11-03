@@ -1,20 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
 	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+		integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
 	<title>Witch Stopper</title>
 </head>
+
 <body>
 
-	
+	<div class="container">
+		<div class="h2 my-4 text-center">The Witch Stopper!</div>
+		<div class="row justify-content-center">
+			<div class="col-sm-4">
+				<form id="formCalculate">
+					<h5>Person A</h5>
+					<div class="row">
+						<div class="col">
+							<div class="form-group">
+								<label for="txtPA_AgeOfDeath">Age Of Death</label>
+								<input type="text" class="form-control" id="txtPA_AgeOfDeath">
+							</div>
+						</div>
+						<div class="col">
+							<div class="form-group">
+								<label for="txtPA_YearOfDeath">Year of Death</label>
+								<input type="text" class="form-control" id="txtPA_YearOfDeath">
+							</div>
+						</div>
+					</div>
+					<h5>Person B</h5>
+					<div class="row">
+						<div class="col">
+							<div class="form-group">
+								<label for="txtPB_AgeOfDeath">Age Of Death</label>
+								<input type="text" class="form-control" id="txtPB_AgeOfDeath">
+							</div>
+						</div>
+						<div class="col">
+							<div class="form-group">
+								<label for="txtPB_YearOfDeath">Year of Death</label>
+								<input type="text" class="form-control" id="txtPB_YearOfDeath">
+							</div>
+						</div>
+					</div>
+					<div class="mt-2">
+						<button type="submit" class="btn btn-primary btn-block">Calculate!</button>
+					</div>
+				</form>
+				<div class="mt-3">
+					Result : <span id="result"></span>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!-- jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+		crossorigin="anonymous"></script>
+	<!-- logic here -->
+	<script src="index.js"></script>
 </body>
+
 </html>
