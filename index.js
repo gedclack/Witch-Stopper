@@ -27,15 +27,12 @@ $(document).ready(function () {
 
 		// check if any of them has invalid value
 		if (!personA.isValid() || !personB.isValid()) {
-			console.log('invalid input!');
 			return -1;
 		}
 
 		// find out the total victims on each persons born year
 		var victimsOnBornYearA = CountVictimsOnYear(personA.getBornYear());
-		console.log(`victimsA:${victimsOnBornYearA}`);
 		var victimsOnBornYearB = CountVictimsOnYear(personB.getBornYear());
-		console.log(`victimsB:${victimsOnBornYearB}`);
 
 		// return the average
 		return (victimsOnBornYearA + victimsOnBornYearB) / 2;
@@ -54,7 +51,7 @@ $(document).ready(function () {
 			fibNumbers.push(previousNum + currentNum);
 			yearCounted++;
 		}
-		console.log(fibNumbers);
+		
 		// sum all the numbers
 		total = fibNumbers.reduce((prevValue, currValue) => prevValue + currValue, 0);
 
